@@ -1,0 +1,61 @@
+.MainDiv{
+    margin-left: 25%;
+    width: 50%;
+    border-width: 2px;
+    height: 500px;
+}
+
+header {
+    float: right;
+    position: fixed;
+    text-align: center;
+    padding: 2px 2px;
+    background:lightgray;    
+    box-sizing: border-box;    
+    top: 25px;
+    left: 25px;
+  }
+
+.MainDiv .DivCheckbox{
+    margin-left: 25%;
+}
+.MainDiv  label
+{
+  float: left;
+  clear: right;
+  width: 25%;  
+}
+.MainDiv .radio, .MainDiv .checkbox{
+    width: inherit;
+}
+
+.MainDiv  input[type="checkbox"]
+{
+    margin: inherit;
+    float: none;
+    margin-left: 5px;
+}
+
+.MainDiv  input[type="submit"]
+{
+    background-color: green;
+    width: 50%;
+    height: 40px;
+}
+
+.MainDiv  input[type="reset"]
+{
+    background-color: darkslategray;
+    width: 50%;
+    height: 40px;
+}
+
+.MainDiv  input,textarea
+{
+  float: left;
+  padding: 2px;
+}
+
+.MainDiv h2{
+    text-align: center;
+}

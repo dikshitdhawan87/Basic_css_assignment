@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="basic.css">
+</head>
+
+<body>
+
+    <div class="MainDiv">
+        <span>
+            <header>I am the fixed header</header>
+        </span>
+        <form action="/fakeUrl/fakeAction">
+            <h2>Student Registration Form</h2>
+            <label for="name">Name: </label>
+            <input type="text" size="50" pattern="[A-Za-z]*" title="Alphabets only" id="name" name="name"
+                required="true" placeholder="Enter your name">
+            <br>
+            <br>
+            <label for="phoneNumber">Phone No.: </label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{10}"
+                title="Enter 10 digit mobile number without +91" placeholder="1234567890">
+            <br>
+            <br>
+            <label for="dateOfBirth">Date of Birth: </label>
+            <input type="date" id="dateOfBirth" name="dateOfBirth">
+            <br>
+            <br>
+            <label for="address">Address: </label>
+            <textarea id="address" name="address"></textarea>
+            <br><br>
+            <label>Gender: </label>
+            <label for="male" class="radio">Male</label>
+            <input type="radio" id="male" value="Male" name="gender">
+            <label for="female" class="radio">Female</label>
+            <input type="radio" id="female" value="Female" name="gender">
+            <br><br>
+            <label for="city">City: </label>
+            <select id="city" name="city">
+                <option value="">Select City</option>
+                <option value="delhi">New Delhi</option>
+                <option value="gurugram">Gurugram</option>
+            </select>
+            <br><br>
+            <label>Hobbies: </label>
+            <div class="DivCheckbox">
+                <div>
+                    <label class="checkbox" for="music">Music</label>
+                    <input type="checkbox" id="music" name="music">
+                </div>
+                <div>
+                    <label class="checkbox" for="sports">Sports</label>
+
+                    <input type="checkbox" id="sports" name="sports">
+                </div>
+                <div>
+                    <label class="checkbox" for="reading">Reading</label>
+                    <input type="checkbox" id="reading" name="reading">
+                </div>
+                <div>
+                    <label class="checkbox" for="writing">Writing</label>
+                    <input type="checkbox" id="writing" name="writing">
+                </div>
+            </div>
+            <br>
+            <br>
+            <div>
+            <input type="submit" calss="Button" value="Submit">
+            <input type="reset" calss="Button" value="Reset">
+        </div>
+        </form>
+    </div>
+    <div style="height: 1000px;">Div for Scroll so that fixed header can be checked.</div>
+</body>
+
+</html>
